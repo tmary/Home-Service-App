@@ -1,0 +1,12 @@
+<div class="container">
+  <br/>
+<p>feedback works!</p>
+<div *ngFor="let item of feedback">
+  <p>{{ item.message }}</p>
+  <p>Rating: {{ item.rating }}</p>
+  <p>Timestamp: {{ item.timestamp  | date}}</p>
+  <p *ngIf="item.response">Response: {{ item.response }}</p>
+  <textarea [(ngModel)] = "item.response" placeholder="Enter your Response here"></textarea>
+  <button (click)="submitResponse(item)">Submit Response</button>
+</div>
+</div>

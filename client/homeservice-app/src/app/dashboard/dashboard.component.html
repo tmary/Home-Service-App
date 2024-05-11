@@ -1,0 +1,15 @@
+
+<div class="container">
+  <br/>
+  <h2>Earnings</h2>
+  <div *ngIf="earningsData">
+    <p>Total Earnings: {{ earningsData.total }}</p>
+    <p>Last Month Earnings: {{ earningsData.lastMonth }}</p>
+  </div>
+
+  <h2>Statistics</h2>
+  <div *ngIf="statisticsData">
+    <p>Total Bookings: {{ statisticsData.totalBookings }}</p>
+    <p>Average Rating: {{ statisticsData.averageRatings }}</p>
+  </div>
+</div>

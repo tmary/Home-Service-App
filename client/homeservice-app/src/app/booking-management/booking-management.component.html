@@ -1,0 +1,8 @@
+<p>Bookings Management </p>
+<div class="container">
+<div *ngFor="let booking of bookings">
+  <p>Service Type: {{ booking.id }}</p>
+  <p>Customer Name: {{ booking.name }}</p>
+  <p>Date : {{booking.date}}</p>
+</div>
+</div>

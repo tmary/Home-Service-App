@@ -1,0 +1,17 @@
+<br/>
+<br/>
+<br/>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let serviceProvider of serviceProviders">
+      <div class="card mb-3 h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{serviceProvider.name}}</h5>
+          <p class="card-text"><span class="bold-text">Areas of service:</span> {{serviceProvider.areasOfService.join(', ')}}</p>
+          <p class="card-text"><span class="bold-text">Rating:</span> {{serviceProvider.rating}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
